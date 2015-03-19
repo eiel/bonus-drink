@@ -1,5 +1,6 @@
 class BonusDrink
   def self.total_count_for(amount)
-    0
+    return 0 if amount < 1
+    amount + amount.pred / 2
   end
 end
